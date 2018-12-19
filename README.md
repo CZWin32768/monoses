@@ -1,5 +1,25 @@
+# Note
+
+## How to run?
+
+
+To run the example, compile fast_align, phrase2vec and moses first.
+
+To run FR-EN example:
+
+```shell
+python train.py \
+--src /mnt/cephfs/lab/chizewen/res/wmt/mono/news.2008_2013.truecase.fr \
+--src-lang fr \
+--trg /mnt/cephfs/lab/chizewen/res/wmt/mono/news.2008_2013.truecase.en  \
+--trg-lang en \
+--working /mnt/cephfs/lab/chizewen/models/fr2en_usmt \
+--from-step 2
+```
+
 Monoses
 ==============
+
 
 This is an open source implementation of our unsupervised statistical machine translation system, described in the following paper:
 
